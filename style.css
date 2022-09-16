@@ -1,0 +1,109 @@
+/* Default settings */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    color: #fff;
+    background-color: #212529;
+}
+
+/* Nav */
+.nav {
+    background-color: #262a2e;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    height: 5.6rem;
+    padding: 0 2rem;
+    /* border-bottom: 1px solid white; */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.nav-first-part,
+.nav-second-part,
+.nav-third-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* First side of nav */
+.nav-first-part {
+    justify-self: flex-start;
+}
+
+.fb-logo {
+    width: 4rem;
+}
+
+.search-input {
+    margin-left: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 6rem;
+    background-color: #40454b;
+    color: #adb5bd;
+    border: none;
+}
+
+.search-input::placeholder {
+    color: #adb5bd;
+}
+
+.search-input:focus {
+    border: none;
+    outline: none;
+}
+
+/* Second side of nav */
+.nav-second-part-btn {
+    color: #adb5bd;
+    font-size: 2.2rem;
+    width: 24%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-second-part-btn:not(.nav-second-part-active):hover {
+    cursor: pointer;
+    background-color: #40454b;
+    border-radius: 4px;
+}
+
+.nav-second-part-active {
+    color: #0466c8;
+    border-bottom: 2px solid #0466c8;
+}
+
+/* Third part of nav */
+.nav-third-part {
+    justify-self: flex-end;
+}
+
+.nav-third-part-btn {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-color: #40454b;
+    color: #fff;
+    font-size: 1.8rem;
+    border: none;
+    margin-left: 1.4rem;
+}
+
+.nav-third-part-btn:hover {
+    cursor: pointer;
+    background-color: #4b5158;
+}
