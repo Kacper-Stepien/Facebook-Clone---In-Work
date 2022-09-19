@@ -113,11 +113,20 @@ body {
     background-color: #4b5158;
 }
 
+.profile-btn img {
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.profile-btn img:hover {
+    filter: brightness(1.1);
+}
+
 /* Main ////////////////////////////////////////////////////////////////////////////////////////////////*/
 .main-part-of-page {
     padding: 2rem 1rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 
 }
 
@@ -129,7 +138,7 @@ body {
 }
 
 .left-aside-btn {
-    width: 70%;
+    width: 100%;
     padding: 1rem;
     display: flex;
     justify-content: flex-start;
@@ -173,7 +182,109 @@ body {
 
 /* Cerntral part */
 .central-part {
-    grid-column: 2/4;
+    grid-column: 2/6;
     display: flex;
     justify-content: center;
+    padding: 1rem;
+}
+
+.central-part-content {
+    width: 60%;
+}
+
+/* Relations ///////////////////////////////////////////////////////////////////////////////*/
+.relations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.relation {
+    width: 13rem;
+    height: 23rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all .2s ease-in;
+}
+
+.relation:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+    transform: scale(1.05);
+}
+
+.add-new-relation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.add-new-relation-btn {
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #0466c8;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.add-new-relation-btn:hover {
+    cursor: pointer;
+}
+
+.relation-theme {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    object-fit: contain;
+    z-index: -1;
+    transition: all .2s ease-in;
+}
+
+.relation-logo,
+.relation-logo img {
+    border-radius: 50%;
+}
+
+.relation-logo img {
+    border: 4px solid #212529;
+}
+
+.relations-more-btn {
+    border-radius: 50%;
+    width: 4.2rem;
+    height: 4.2rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #adb5bd;
+    background-color: #31363b;
+    border: none;
+    position: absolute;
+    right: -2rem;
+}
+
+.relations-more-btn:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
 }
